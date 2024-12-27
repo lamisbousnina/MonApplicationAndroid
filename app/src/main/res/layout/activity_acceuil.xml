@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    android:padding="20dp">
+
+    <!-- Image principale -->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Titre principal -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HelpCasaMobile"
+        android:textSize="36sp"
+        android:textColor="#FFFFFFFF"
+        android:layout_marginBottom="30dp"
+        android:gravity="center" />
+
+    <!-- Boutons : Acheter ou Louer -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="50dp">
+
+        <Button
+            android:id="@+id/btnAcheter"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="Acheter"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="#FFF"
+            android:textColor="#000000"
+            android:elevation="8dp"
+            android:layout_marginEnd="15dp" />
+
+        <Button
+            android:id="@+id/btnLouer"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="Louer"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="#FFFF"
+            android:textColor="#000000"
+            android:elevation="8dp"
+            android:layout_marginStart="15dp" />
+    </LinearLayout>
+
+    <!-- Champ de recherche -->
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rechercher une localisation"
+        android:padding="12dp" />
+</LinearLayout>

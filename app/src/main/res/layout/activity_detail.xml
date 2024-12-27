@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Image principale -->
+    <ImageView
+        android:id="@+id/imgDetail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_property_detail"
+        android:scaleType="centerCrop" />
+
+    <!-- Nom de l'appartement -->
+    <TextView
+        android:id="@+id/tvDetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retro Flat"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+    <!-- Détails de la propriété -->
+    <TextView
+        android:id="@+id/property_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details of the property will be displayed here"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp" />
+
+    <!-- Prix -->
+    <TextView
+        android:id="@+id/tvDetailPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$1200"
+        android:textSize="18sp"
+        android:textColor="#F97316" />
+
+    <!-- Bouton de réservation -->
+    <Button
+        android:id="@+id/btnBookNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Réserver cet appartement"
+        android:backgroundTint="#FB7185"
+        android:textColor="#FFF"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

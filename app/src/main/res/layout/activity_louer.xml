@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Barre de recherche -->
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City, Address, Agent, Zip"
+        android:padding="16dp"
+        android:layout_margin="8dp" />
+
+    <!-- Liste des propriétés -->
+    <LinearLayout
+        android:id="@+id/property_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Annonce 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Image de la propriété -->
+                <ImageView
+                    android:id="@+id/property_image11"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/louer1" />
+
+                <!-- Contenu Texte -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/property_address11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Appartement S+1"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/property_location11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aouina"
+                        android:textSize="12sp"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:id="@+id/property_details11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="s+1, 1 salle de Bains"
+                        android:textSize="12sp" />
+
+                    <!-- Prix -->
+                    <TextView
+                        android:id="@+id/property_price11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apartir de 300DT/mois"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/more_details_button11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Plus de Details"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#FFC107"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Annonce 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Image de la propriété -->
+                <ImageView
+                    android:id="@+id/property_image22"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/louer2" />
+
+                <!-- Contenu Texte -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/property_address22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mini Villa #201"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/property_location22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marsa"
+                        android:textSize="12sp"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:id="@+id/property_details22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 Beds, 2.5 Baths, 1 Garage , Piscine "
+                        android:textSize="12sp" />
+
+                    <!-- Prix -->
+                    <TextView
+                        android:id="@+id/property_price22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apartir de  1000DT/mois "
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/more_details_button22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Plus de Details"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#FFC107"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Annonce 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Image de la propriété -->
+                <ImageView
+                    android:id="@+id/property_image33"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/louer3" />
+
+                <!-- Contenu Texte -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/property_address33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Appartement s+2 #101"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/property_location33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rades"
+                        android:textSize="12sp"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:id="@+id/property_details3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="s+2, 1 SB"
+                        android:textSize="12sp" />
+
+                    <!-- Prix -->
+                    <TextView
+                        android:id="@+id/property_price33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apartir de  600DT/mois"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/more_details_button33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Plus de Details"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#FFC107"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

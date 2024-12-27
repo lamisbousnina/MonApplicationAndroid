@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Barre de recherche -->
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City, Address, Agent, Zip"
+        android:padding="16dp"
+        android:layout_margin="8dp" />
+
+    <!-- Liste des propriétés -->
+    <LinearLayout
+        android:id="@+id/property_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Annonce 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Image de la propriété -->
+                <ImageView
+                    android:id="@+id/property_image1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/house1" />
+
+                <!-- Contenu Texte -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/property_address1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Villa Kings  #101"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/property_location1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tunis"
+                        android:textSize="12sp"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:id="@+id/property_details1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="s+3, 3 salle de Bains, 2 Garage , Piscine"
+                        android:textSize="12sp" />
+
+                    <!-- Prix -->
+                    <TextView
+                        android:id="@+id/property_price1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apartir de 300000DT"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/more_details_button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Plus de Details"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#FFC107"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Annonce 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Image de la propriété -->
+                <ImageView
+                    android:id="@+id/property_image2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/house2" />
+
+                <!-- Contenu Texte -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/property_address2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mini Villa #201"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/property_location2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textSize="12sp"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:id="@+id/property_details2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 Beds, 2.5 Baths, 1 Garage"
+                        android:textSize="12sp" />
+
+                    <!-- Prix -->
+                    <TextView
+                        android:id="@+id/property_price2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apartir de  100000 DT"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/more_details_button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Plus de Details"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#FFC107"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Annonce 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Image de la propriété -->
+                <ImageView
+                    android:id="@+id/property_image3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/house3" />
+
+                <!-- Contenu Texte -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/property_address3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1414 N Fairfax Ave #101"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/property_location3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textSize="12sp"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:id="@+id/property_details3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 Beds, 3.5 Baths, 1 Garage"
+                        android:textSize="12sp" />
+
+                    <!-- Prix -->
+                    <TextView
+                        android:id="@+id/property_price3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="From $625,000"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/more_details_button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="More Details"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#FFC107"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <!-- Annonce 4 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Image de la propriété -->
+                <ImageView
+                    android:id="@+id/property_image4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/house4" />
+
+                <!-- Contenu Texte -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/property_address4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1253 N Sweetzer Ave #4"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/property_location4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textSize="12sp"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:id="@+id/property_details4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 Beds, 2.5 Baths, 1 Garage"
+                        android:textSize="12sp" />
+
+                    <!-- Prix -->
+                    <TextView
+                        android:id="@+id/property_price4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="From $1,199,000"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/more_details_button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="More Details"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#FFC107"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <!-- Annonce 5 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Image de la propriété -->
+                <ImageView
+                    android:id="@+id/property_image5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/house5" />
+
+                <!-- Contenu Texte -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/property_address5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1234 Sunset Blvd #505"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/property_location5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textSize="12sp"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:id="@+id/property_details5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 Beds, 2 Baths, 1 Garage"
+                        android:textSize="12sp" />
+
+                    <!-- Prix -->
+                    <TextView
+                        android:id="@+id/property_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="From $850,000"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/more_details_button5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="More Details"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#FFC107"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <!-- Annonce 6 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Image de la propriété -->
+                <ImageView
+                    android:id="@+id/property_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/house6" />
+
+                <!-- Contenu Texte -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/property_address6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="789 Palm Dr #8"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/property_location6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textSize="12sp"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:id="@+id/property_details6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 Beds, 1 Bath, 1 Garage"
+                        android:textSize="12sp" />
+
+                    <!-- Prix -->
+                    <TextView
+                        android:id="@+id/property_price6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="From $590,000"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/more_details_button6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="More Details"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#FFC107"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>
